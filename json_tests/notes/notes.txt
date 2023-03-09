@@ -1,0 +1,15 @@
+_json : used to create a string of json format
+    // create object from string literal
+    json j = "{ \"happy\": true, \"pi\": 3.141 }"_json;
+
+    // or even nicer with a raw string literal
+    auto j2 = R"(
+      {
+        "happy": true,
+        "pi": 3.141
+      }
+    )"_json;
+
+
+dump() : for serialization
+    std::string str = json_object.dump(int n); // n is spaces in identation while printing

@@ -1,0 +1,21 @@
+{
+    "configuration": 
+    [
+        {
+            "name": "config_name_1",
+            "minPlayerCount": 2,
+            "maxPlayerCount": 3,
+            "audience": true
+        }
+    ],
+
+    "Rule": 
+    [
+        {
+            "ruleName": "rule_name_1",
+            // "valueMap": "map",
+            // "rulesList": "list"
+        }s
+    ]
+
+}

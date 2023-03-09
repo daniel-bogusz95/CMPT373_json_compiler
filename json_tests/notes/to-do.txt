@@ -1,0 +1,9 @@
+
+add : 
+    std::map in parser
+
+implement :  
+    function for reading directly from file
+    function for writing instead of repeated code
+
+not working :
