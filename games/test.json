@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "name": "test game",
+    "player count": {"min": 1, "max": 99},
+    "audience": false,
+    "setup": {
+      "Rounds": 1
+    }
+  },
+
+  "constants": {
+  },
+
+  "variables": {
+    "choice": "click to end game"
+  },
+
+  "per-player": {
+  },
+
+  "per-audience": {},
+
+  "rules": [
+
+    { "rule": "input-choice",
+      "to": "player",
+      "prompt": "The game has Begun! The game will end in 10 seconds!",
+      "choices": "end now!",
+      "result": "choice",
+      "timeout": 10
+    }
+
+  ]
+}

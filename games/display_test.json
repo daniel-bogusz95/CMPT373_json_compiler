@@ -1,0 +1,48 @@
+{
+  "configuration": {
+    "name": "say something 10 times",
+    "player count": {"min": 1, "max": 1},
+    "audience": false,
+    "setup": {
+      "Rounds": 10
+    }
+  },
+
+  "constants": {
+  },
+
+  "variables": {
+    "input": "not talkative"
+  },
+
+  "per-player": {
+  },
+
+  "per-audience": {},
+
+  "rules": [
+    { "rule": "foreach",
+      "list": "configuration.Rounds.upfrom(1)",
+      "element": "round",
+      "rules": [
+	{
+        "rule": "foreach",
+         "list": "players",
+         "element": "player",
+         "rules": [
+
+            { 	
+            	"rule": "input-text",
+              	"to": "player",
+		"prompt": "What do you want to say?",
+		"result": "input",
+            }
+         ]
+
+	{
+	"rule": "global-message",
+	  "value": "input"
+	},
+    },
+  ]
+}
